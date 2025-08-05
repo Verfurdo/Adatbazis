@@ -59,10 +59,22 @@ Python 3.7 vagy újabb ajánlott.
 -   data/Adagok.csv – Forrásadat a gyártási adagokról.
 -   data/Hűtőpanelek.csv – Forrásadat a szenzoros panelmérésekről.
 -   data/Kemence.db – Az automatikusan generált SQLite adatbázisfájl.
+
+## Fő funkciók
+
+-   CSV adatok intelligens tisztítása, normalizálása (hibás, irreális, hiányzó értékek kezelése)
+-   Adatbázis generálás, frissítés, tranzakciókezeléssel
+-   Táblák böngészése modern Streamlit-felületen
+-   Beépített SQL-lekérdezések: aggregáció, JOIN, UNION, időintervallumos lekérdezések stb.
+-   új rekord beszúrása felületen keresztül
+-   Felhasználói hibakezelés (siker, figyelmeztetés, hibaüzenetek)
 	
 ## Működés
-A program elindulásakor a GDE-TOURS légitársaság előre feltöltött járatlistával és foglalásokkal rendelkezik. A felhasználó a menüben foglalhat jegyet, lekérdezheti vagy lemondhatja saját foglalásait.
-A rendszer a dátum alapján ellenőrzi az elérhető járatokat. Minden foglalás egy JegyFoglalas objektumként kerül eltárolásra, ami tartalmazza a járat adatait, a foglalás dátumát és a felhasználó nevét.
+A program lehetővé teszi:
+Adatbázis frissítését vagy újrahúzását, ha változott az adatforrás.
+Felhasználók által táblanézetben történő adatellenőrzést.
+Ipari- és adatbázis-mérnöki szempontból legfontosabb kérdések gyors áttekintését (statisztikák, szélsőértékek felderítése).
+(Bővíthető) az adatok manuális bővítése vagy tesztelése érdekében.
 
 ## Közreműködők
 
