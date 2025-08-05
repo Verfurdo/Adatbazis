@@ -1,0 +1,2 @@
+# Adatbazis
+Adatbazis projektfeladat
