@@ -36,24 +36,29 @@ Python 3.7 vagy újabb ajánlott.
     Vagy futtatsd az install_modules.py fájlt, amely automatikusan telepíti a függőségeket:
         python install_modules.py
 
-1.	Futtasd a fő programot:
-	python start_project.py
 
 ## Használat
 
-Indítás után egy konzolos menü jelenik meg, ahol a következő opciók közül választhatsz:
--	1 – Jegy Foglalása: Add meg a neved, a dátumot, majd válassz egy elérhető járatot.
--	2 – Foglalás Lemondása: Válaszd ki saját foglalásaid közül, melyiket szeretnéd törölni.
--	3 – Foglalások Listázása: Az összes foglalás megtekintése.
--	4 – Kilépés: A program bezárása.
+1.	Futtasd a fő programot:	python start_project.py
+
+Adatbázis létrehozás/frissítés:
+Töltsd fel a CSV-ket, majd kattints az „Adatbázis frissítése” gombra. Ez beolvassa, tisztítja az adatokat, majd rögzíti őket az SQLite adatbázisba.
+
+Táblák böngészése:
+Válassz ki egy táblát (adag vagy hutes) és nézd meg annak tartalmát.
+
+Lekérdezések:
+A megfelelő gombra kattintva kész lekérdezéseket futtathatsz (panel-átlagok, legnagyobb értékek, időintervallum, stb.).
+
+Új rekord beszúrása:
+(Ha beépíted: egy egyszerű űrlapon keresztül további adagszámot vagy hőfokadatot is adhatsz hozzá az adatbázishoz.)
 
 ## Fájlok magyarázata
 
--	GDE_Repjegy.py: A teljes program logikáját és konzolos kezelőfelületét tartalmazza.
-	-	Jarat: Absztrakt alaposztály járatokhoz.
-	-	Belfoldi / Europa / Amerika / Azsia: Származtatott osztályok - Konkrét járattípusok.
-	-	JegyFoglalas: Foglalás adatait tárolja (járat, dátum, név).
-	-	LegiTarsasag: Kezeli a járatokat és foglalásokat.
+project.py – A teljes alkalmazás logikája, Streamlit UI és adatfeldolgozás.
+data/Adagok.csv – Forrásadat a gyártási adagokról.
+data/Hűtőpanelek.csv – Forrásadat a szenzoros panelmérésekről.
+data/Kemence.db – Az automatikusan generált SQLite adatbázisfájl.
 	
 ## Működés
 A program elindulásakor a GDE-TOURS légitársaság előre feltöltött járatlistával és foglalásokkal rendelkezik. A felhasználó a menüben foglalhat jegyet, lekérdezheti vagy lemondhatja saját foglalásait.
