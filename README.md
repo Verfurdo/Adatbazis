@@ -41,24 +41,24 @@ Python 3.7 vagy újabb ajánlott.
 
 1.	Futtasd a fő programot:	python start_project.py
 
-Adatbázis létrehozás/frissítés:
-Töltsd fel a CSV-ket, majd kattints az „Adatbázis frissítése” gombra. Ez beolvassa, tisztítja az adatokat, majd rögzíti őket az SQLite adatbázisba.
+-   Adatbázis létrehozás/frissítés:
+    Töltsd fel a CSV-ket, majd kattints az „Adatbázis frissítése” gombra. Ez beolvassa, tisztítja az adatokat, majd rögzíti őket az SQLite adatbázisba.
 
-Táblák böngészése:
-Válassz ki egy táblát (adag vagy hutes) és nézd meg annak tartalmát.
+-   Táblák böngészése:
+    Válassz ki egy táblát (adag vagy hutes) és nézd meg annak tartalmát.
 
-Lekérdezések:
-A megfelelő gombra kattintva kész lekérdezéseket futtathatsz (panel-átlagok, legnagyobb értékek, időintervallum, stb.).
+-   Lekérdezések:
+    A megfelelő gombra kattintva kész lekérdezéseket futtathatsz (panel-átlagok, legnagyobb értékek, időintervallum, stb.).
 
-Új rekord beszúrása:
-(Ha beépíted: egy egyszerű űrlapon keresztül további adagszámot vagy hőfokadatot is adhatsz hozzá az adatbázishoz.)
+-   Új rekord beszúrása:
+    (Ha beépíted: egy egyszerű űrlapon keresztül további adagszámot vagy hőfokadatot is adhatsz hozzá az adatbázishoz.)
 
 ## Fájlok magyarázata
 
-project.py – A teljes alkalmazás logikája, Streamlit UI és adatfeldolgozás.
-data/Adagok.csv – Forrásadat a gyártási adagokról.
-data/Hűtőpanelek.csv – Forrásadat a szenzoros panelmérésekről.
-data/Kemence.db – Az automatikusan generált SQLite adatbázisfájl.
+-   project.py – A teljes alkalmazás logikája, Streamlit UI és adatfeldolgozás.
+-   data/Adagok.csv – Forrásadat a gyártási adagokról.
+-   data/Hűtőpanelek.csv – Forrásadat a szenzoros panelmérésekről.
+-   data/Kemence.db – Az automatikusan generált SQLite adatbázisfájl.
 	
 ## Működés
 A program elindulásakor a GDE-TOURS légitársaság előre feltöltött járatlistával és foglalásokkal rendelkezik. A felhasználó a menüben foglalhat jegyet, lekérdezheti vagy lemondhatja saját foglalásait.
